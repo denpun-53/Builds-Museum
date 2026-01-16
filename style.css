@@ -1,0 +1,108 @@
+body {
+  font-family: "Hiragino Sans", "Noto Sans JP", sans-serif;
+  background-color: #f8f6f3;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #b8c8b9;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#menu-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+#menu-list {
+  display: none;
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 10px;
+  background-color: #cddbcf;
+  border-radius: 10px;
+}
+
+#menu-list li {
+  margin: 10px 0;
+}
+
+#menu-list a {
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.category {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.category h2 {
+  color: #6a7b6b;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.member-card {
+  display: block;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 180px;
+  text-decoration: none;
+  color: #444;
+  transition: transform 0.2s;
+}
+
+.member-card:hover {
+  transform: scale(1.05);
+}
+
+.member-card img {
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+footer {
+  background-color: #e9e6e1;
+  text-align: center;
+  padding: 20px;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.creator {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: #888;
+}
