@@ -127,3 +127,45 @@ footer {
 .gallery img:hover {
   transform: scale(1.05); 
 }
+
+.slideshow {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.slides img {
+  width: 100%;
+  display: none;      /* まず全部非表示 */
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.slides img.active {
+  display: block;     /* activeだけ表示 */
+}
+
+.slideshow button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.7);
+  border: none;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.slideshow .prev {
+  left: -40px;  /* 左矢印の位置 */
+}
+
+.slideshow .next {
+  right: -40px; /* 右矢印の位置 */
+}
+
+.slides img:hover {
+  transform: scale(1.05);
+}
